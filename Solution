@@ -1,0 +1,24 @@
+/**
+ *  UCF COP3330 Fall 2021 Assignment 5 Solution
+ *  Copyright 2021 Yeshwanth Mandava
+ */
+
+Question:
+ Can we declare a non-reference function argument const (e.g., void f(const int);)?
+ What might that mean? Why might we want to do that? Why don't people do that often?
+ Try it; write a couple of small programs to see what works.
+
+Answer:
+  - Yes, we can declare a parameter within a a function as a const. The program compiles.
+  - Marking a parameter as Const means that the particular variable in the function can't be modified
+    and hence be a constant.
+  - Foremost, making a parameter const. allows for the developer or whoever will work on that program in the future
+    to know that the specific marked parameter must be kept as constant. It is used as documentation and also as a
+    mechanism preventing anyone from changing the intended constant variable.
+  - This method isn't used a lot because it doesn't haven't have any major changes on the function.
+    It would be easier to declare the constant variable globally It is also very uncommon for functions to have
+    constant arguments and unmodifiable parameters. Additionally, the cont. variable will only be constant for
+    whatever function it is used for. Outside of the function it is a modifiable variable.
+
+
+ *Example program included in the main.cpp file
